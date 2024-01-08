@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using System.Collections;
+using static InputBase;
+using UnityEngine;
 
 namespace RVP
 {
@@ -15,19 +16,23 @@ namespace RVP
         [Tooltip("Y position below which the vehicle will be reset")]
         public float fallLimit = -10;
 
-        void Update() {
-            if (Input.GetButtonDown("Reset Rotation")) {
-                StartCoroutine(ResetRotation());
-            }
+        private void Awake()
+        {
+            input.Car.ResetPos.performed += context => StartCoroutine(ResetRotation());
+            input.Car.ResetPos.performed += context => StartCoroutine(ResetPosition());
+        }
 
-            if (Input.GetButtonDown("Reset Position") || transform.position.y < fallLimit) {
-                StartCoroutine(ResetPosition());
-            }
+        private void OnDisable()
+        {
+            input.Car.ResetPos.performed -= context => StartCoroutine(ResetRotation());
+            input.Car.ResetPos.performed -= context => StartCoroutine(ResetPosition());
         }
 
         // This waits for the next fixed update before resetting the rotation of the vehicle
-        IEnumerator ResetRotation() {
-            if (GetComponent<VehicleDamage>()) {
+        IEnumerator ResetRotation()
+        {
+            if (GetComponent<VehicleDamage>())
+            {
                 GetComponent<VehicleDamage>().Repair();
             }
 
@@ -39,8 +44,10 @@ namespace RVP
         }
 
         // This waits for the next fixed update before resetting the position of the vehicle
-        IEnumerator ResetPosition() {
-            if (GetComponent<VehicleDamage>()) {
+        IEnumerator ResetPosition()
+        {
+            if (GetComponent<VehicleDamage>())
+            {
                 GetComponent<VehicleDamage>().Repair();
             }
 

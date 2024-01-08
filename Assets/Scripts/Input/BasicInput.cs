@@ -1,5 +1,6 @@
-﻿using UnityEngine;
-using System.Collections;
+﻿using UnityEngine.InputSystem;
+using static InputBase;
+using UnityEngine;
 
 namespace RVP
 {
@@ -10,78 +11,77 @@ namespace RVP
     // Class for setting the input with the input manager
     public class BasicInput : MonoBehaviour
     {
-        VehicleParent vp;
-        public string accelAxis;
-        public string brakeAxis;
-        public string steerAxis;
-        public string ebrakeAxis;
-        public string boostButton;
-        public string upshiftButton;
-        public string downshiftButton;
-        public string pitchAxis;
-        public string yawAxis;
-        public string rollAxis;
+        private VehicleParent vp;
 
-        void Start() {
+        public string[] inputs;
+        public string[] methods;
+        public string[] inputsBoolean;
+        public string[] methodsBoolean;
+        public InputAction[] booleanActions;
+
+        private void Awake()
+        {
             vp = GetComponent<VehicleParent>();
         }
 
-        void Update() {
-            // Get single-frame input presses
-            if (!string.IsNullOrEmpty(upshiftButton)) {
-                if (Input.GetButtonDown(upshiftButton)) {
-                    vp.PressUpshift();
-                }
+        private void OnEnable() => EnableAllInputs();
+
+        private void OnDisable() => DisableAllInputs();
+
+        #region INPUT_HANDLING
+
+        private void EnableAllInputs()
+        {
+            booleanActions = new InputAction[inputsBoolean.Length];
+            for (int i = 0; i < inputsBoolean.Length; i++)
+            {
+                booleanActions[i] = input.FindAction(inputsBoolean[i]);
+                EnableBoolInput(i, methodsBoolean[i]);
             }
 
-            if (!string.IsNullOrEmpty(downshiftButton)) {
-                if (Input.GetButtonDown(downshiftButton)) {
-                    vp.PressDownshift();
-                }
+            for (int i = 0; i < inputs.Length; i++)
+            {
+                EnableInput(inputs[i], methods[i]);
             }
         }
 
-        void FixedUpdate() {
-            // Get constant inputs
-            if (!string.IsNullOrEmpty(accelAxis)) {
-                vp.SetAccel(Input.GetAxis(accelAxis));
+        private void DisableAllInputs()
+        {
+            for (int i = 0; i < inputsBoolean.Length; i++)
+            {
+                DisableBoolInput(i, methodsBoolean[i]);
             }
 
-            if (!string.IsNullOrEmpty(brakeAxis)) {
-                vp.SetBrake(Input.GetAxis(brakeAxis));
-            }
-
-            if (!string.IsNullOrEmpty(steerAxis)) {
-                vp.SetSteer(Input.GetAxis(steerAxis));
-            }
-
-            if (!string.IsNullOrEmpty(ebrakeAxis)) {
-                vp.SetEbrake(Input.GetAxis(ebrakeAxis));
-            }
-
-            if (!string.IsNullOrEmpty(boostButton)) {
-                vp.SetBoost(Input.GetButton(boostButton));
-            }
-
-            if (!string.IsNullOrEmpty(pitchAxis)) {
-                vp.SetPitch(Input.GetAxis(pitchAxis));
-            }
-
-            if (!string.IsNullOrEmpty(yawAxis)) {
-                vp.SetYaw(Input.GetAxis(yawAxis));
-            }
-
-            if (!string.IsNullOrEmpty(rollAxis)) {
-                vp.SetRoll(Input.GetAxis(rollAxis));
-            }
-
-            if (!string.IsNullOrEmpty(upshiftButton)) {
-                vp.SetUpshift(Input.GetAxis(upshiftButton));
-            }
-
-            if (!string.IsNullOrEmpty(downshiftButton)) {
-                vp.SetDownshift(Input.GetAxis(downshiftButton));
+            for (int i = 0; i < inputs.Length; i++)
+            {
+                DisableInput(inputs[i], methods[i]);
             }
         }
+
+        private void EnableInput(string inputName, string method)
+        {
+            input.FindAction(inputName).performed += context => vp.SendMessage(method, context.ReadValue<float>());
+            input.FindAction(inputName).canceled += context => vp.SendMessage(method, context.ReadValue<float>());
+        }
+
+        private void EnableBoolInput(int index, string method)
+        {
+            booleanActions[index].performed += context => vp.SendMessage(method, true);
+            booleanActions[index].canceled += context => vp.SendMessage(method, false);
+        }
+
+        private void DisableInput(string inputName, string method)
+        {
+            input.FindAction(inputName).performed -= context => vp.SendMessage(method, context.ReadValue<float>());
+            input.FindAction(inputName).canceled -= context => vp.SendMessage(method, context.ReadValue<float>());
+        }
+
+        private void DisableBoolInput(int index, string method)
+        {
+            booleanActions[index].performed -= context => vp.SendMessage(method, true);
+            booleanActions[index].canceled -= context => vp.SendMessage(method, false);
+        }
+
+        #endregion
     }
 }

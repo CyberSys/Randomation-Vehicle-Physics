@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using static InputBase;
 
 namespace RVP
 {
@@ -10,19 +11,33 @@ namespace RVP
     public class BasicCameraInput : MonoBehaviour
     {
         CameraControl cam;
-        public string xInputAxis;
-        public string yInputAxis;
+        float xInput;
+        float yInput;
 
-        void Start() {
+        void Start()
+        {
             // Get camera controller
             cam = GetComponent<CameraControl>();
+            input.Camera.Yaw.performed += context => xInput = context.ReadValue<float>();
+            input.Camera.Pitch.performed += context => yInput = context.ReadValue<float>();
+
+            input.Camera.Yaw.canceled += context => xInput = context.ReadValue<float>();
+            input.Camera.Pitch.canceled += context => yInput = context.ReadValue<float>();
         }
 
-        void FixedUpdate() {
+        private void OnDisable()
+        {
+            input.Camera.Yaw.performed -= context => xInput = context.ReadValue<float>();
+            input.Camera.Pitch.performed -= context => yInput = context.ReadValue<float>();
+
+            input.Camera.Yaw.canceled -= context => xInput = context.ReadValue<float>();
+            input.Camera.Pitch.canceled -= context => yInput = context.ReadValue<float>();
+        }
+
+        void FixedUpdate()
+        {
             // Set camera rotation input if the input axes are valid
-            if (cam && !string.IsNullOrEmpty(xInputAxis) && !string.IsNullOrEmpty(yInputAxis)) {
-                cam.SetInput(Input.GetAxis(xInputAxis), Input.GetAxis(yInputAxis));
-            }
+            if (cam) cam.SetInput(xInput, yInput);
         }
     }
 }

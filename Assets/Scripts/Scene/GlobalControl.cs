@@ -1,6 +1,7 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEngine.SceneManagement;
+﻿using UnityEngine.SceneManagement;
+using UnityEngine.InputSystem;
+using UnityEngine;
+using static InputBase;
 
 namespace RVP
 {
@@ -50,7 +51,10 @@ namespace RVP
         public float tireFadeTime;
         public static float tireFadeTimeStatic;
 
-        void Start() {
+        void Start()
+        {
+            input.System.Reset.performed += QuickRestart;
+
             initialFixedTime = Time.fixedDeltaTime;
             // Set static variables
             wheelCastMaskStatic = wheelCastMask;
@@ -64,10 +68,13 @@ namespace RVP
             tireFadeTimeStatic = tireFadeTime;
         }
 
-        void Update() {
+        void QuickRestart(InputAction.CallbackContext context)
+        {
             // Quickly restart scene with a button press
-            if (quickRestart) {
-                if (Input.GetButtonDown("Restart")) {
+            if (quickRestart)
+            {
+                if (Input.GetButtonDown("Restart"))
+                {
                     SceneManager.LoadScene(SceneManager.GetActiveScene().name);
                     Time.timeScale = 1;
                     Time.fixedDeltaTime = initialFixedTime;
@@ -75,7 +82,10 @@ namespace RVP
             }
         }
 
-        void FixedUpdate() {
+        private void OnDisable() => input.System.Reset.performed -= QuickRestart;
+
+        void FixedUpdate()
+        {
             // Set global up direction
             worldUpDir = Physics.gravity.sqrMagnitude == 0 ? Vector3.up : -Physics.gravity.normalized;
         }
