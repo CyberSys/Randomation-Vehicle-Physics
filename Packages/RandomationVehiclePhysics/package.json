@@ -1,0 +1,9 @@
+{
+  "name": "com.justinvoke.randomation",
+  "displayName":"Randomation Vehicle Physics",
+  "version": "2.0.1",
+  "unity": "2019.4",
+  "description": "Vehicle physics system for the Unity engine.",
+  "dependencies": {
+  }
+}
