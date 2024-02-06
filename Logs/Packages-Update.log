@@ -67,3 +67,15 @@ The following packages were updated:
   com.unity.timeline from version 1.1.0 to 1.2.6
 The following packages were removed:
   com.unity.package-manager-ui@2.2.0
+
+=== Tue Feb  6 12:24:51 2024
+
+Packages were changed.
+Update Mode: resetToDefaultDependencies
+
+The following packages were added:
+  com.unity.collab-proxy@1.2.16
+  com.unity.ide.vscode@1.2.0
+  com.unity.test-framework@1.1.14
+  com.unity.textmeshpro@2.0.1
+  com.unity.timeline@1.2.14
