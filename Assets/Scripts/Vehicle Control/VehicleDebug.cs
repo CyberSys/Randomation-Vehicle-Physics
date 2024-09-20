@@ -39,7 +39,7 @@ namespace RVP
             yield return new WaitForFixedUpdate();
             transform.eulerAngles = new Vector3(0, transform.eulerAngles.y, 0);
             transform.Translate(Vector3.up, Space.World);
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
 
@@ -54,7 +54,7 @@ namespace RVP
             transform.position = spawnPos;
             yield return new WaitForFixedUpdate();
             transform.rotation = Quaternion.LookRotation(spawnRot, GlobalControl.worldUpDir);
-            GetComponent<Rigidbody>().velocity = Vector3.zero;
+            GetComponent<Rigidbody>().linearVelocity = Vector3.zero;
             GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
         }
     }
