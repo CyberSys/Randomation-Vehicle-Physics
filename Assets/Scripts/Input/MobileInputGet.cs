@@ -14,7 +14,7 @@ namespace RVP
         MobileInput setter;
         public float steerFactor = 1;
         public float flipFactor = 1;
-        public bool useAccelerometer = true;
+        public bool useAccelerometer = false;
 
         [Tooltip("Multiplier for input addition based on rate of change of input")]
         public float deltaFactor = 10;
@@ -28,13 +28,15 @@ namespace RVP
 
         void FixedUpdate() {
             if (setter) {
-                accelerationDelta = Input.acceleration - accelerationPrev;
-                accelerationPrev = Input.acceleration;
+                // accelerationDelta = Input.acceleration - accelerationPrev;
+                // accelerationPrev = Input.acceleration;
                 vp.SetAccel(setter.accel);
                 vp.SetBrake(setter.brake);
                 vp.SetEbrake(setter.ebrake);
                 vp.SetBoost(setter.boost);
+                vp.SetSteer(setter.steer);
 
+                /*
                 if (useAccelerometer) {
                     // Accelerometer input
                     vp.SetSteer((Input.acceleration.x + accelerationDelta.x * deltaFactor) * steerFactor);
@@ -44,6 +46,7 @@ namespace RVP
                 else {
                     vp.SetSteer(setter.steer);
                 }
+                */
             }
         }
     }

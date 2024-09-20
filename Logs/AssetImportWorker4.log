@@ -13,9 +13,9 @@ Pro License: YES
 The selected window backend is (null) 
 The windowing protocol is Wayland which is not supported in the Editor. Some features may not be fully functional.
 
-(Unity:32945): Gtk-CRITICAL **: 22:15:46.598: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
+(Unity:33208): Gtk-CRITICAL **: 22:16:01.380: gtk_window_set_default_icon: assertion 'GDK_IS_PIXBUF (icon)' failed
 
-(Unity:32945): GLib-GObject-CRITICAL **: 22:15:46.598: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
+(Unity:33208): GLib-GObject-CRITICAL **: 22:16:01.380: g_object_unref: assertion 'G_IS_OBJECT (object)' failed
 Desktop is 2688 x 1360 @ 60 Hz
 Initialize udev device monitor.
 
@@ -25,11 +25,11 @@ Unity
 -batchMode
 -noUpm
 -name
-AssetImportWorker0
+AssetImportWorker4
 -projectPath
 /home/kahlis/Projetos/Randomation-Vehicle-Physics
 -logFile
-Logs/AssetImportWorker0.log
+Logs/AssetImportWorker4.log
 -srvPort
 35845
 -job-worker-count
@@ -40,9 +40,9 @@ Logs/AssetImportWorker0.log
 1
 Successfully changed project path to: /home/kahlis/Projetos/Randomation-Vehicle-Physics
 
-(Unity:32945): Gtk-CRITICAL **: 22:15:46.718: gtk_label_set_markup: assertion 'GTK_IS_LABEL (label)' failed
+(Unity:33208): Gtk-CRITICAL **: 22:16:01.499: gtk_label_set_markup: assertion 'GTK_IS_LABEL (label)' failed
 
-(Unity:32945): Gtk-CRITICAL **: 22:15:46.719: gtk_label_set_markup: assertion 'GTK_IS_LABEL (label)' failed
+(Unity:33208): Gtk-CRITICAL **: 22:16:01.500: gtk_label_set_markup: assertion 'GTK_IS_LABEL (label)' failed
 /home/kahlis/Projetos/Randomation-Vehicle-Physics
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
     "memorysetup-bucket-allocator-granularity=16"
@@ -79,12 +79,12 @@ Successfully changed project path to: /home/kahlis/Projetos/Randomation-Vehicle-
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [139873902617984]  Target information:
+Player connection [140167979910528]  Target information:
 
-Player connection [139873902617984]  * "[IP] 192.168.1.103 [Port] 0 [Flags] 2 [Guid] 505877599 [EditorId] 505877599 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.103) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
+Player connection [140167979910528]  * "[IP] 192.168.1.103 [Port] 0 [Flags] 2 [Guid] 2511796729 [EditorId] 2511796729 [Version] 1048832 [Id] LinuxEditor(16,192.168.1.103) [Debug] 1 [PackageName] LinuxEditor [ProjectName] Editor" 
 
-Player connection [139873902617984] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [139873902617984] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [140167979910528] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [140167979910528] Host joined alternative multi-casting on [225.0.0.222:34997]...
 JobSystem: Creating JobQueue using job-worker-count value 2
 [Physics::Module] Initialized fallback backend.
 [Physics::Module] Id: 0xdecafbad
@@ -117,12 +117,12 @@ L_EXT_texture_lod_bias GL_EXT_texture_mirror_clamp GL_EXT_texture_object GL_EXT_
 blend_equation_advanced_coherent GL_NV_blend_minmax_factor GL_NV_blend_square GL_NV_command_list GL_NV_compute_program5 GL_NV_conditional_render GL_NV_conservative_raster GL_NV_conservative_raster_dilate GL_NV_copy_depth_to_color GL_NV_copy_image GL_NV_depth_buffer_float GL_NV_depth_clamp GL_NV_draw_texture GL_NV_draw_vulkan_image GL_NV_ES1_1_compatibility GL_NV_ES3_1_compatibility GL_NV_explicit_multisample GL_NV_feature_query GL_NV_fence GL_NV_fill_rectangle GL_NV_float_buffer GL_NV_fog_distance GL_NV_fragment_coverage_to_color GL_NV_fragment_program GL_NV_fragment_program_option GL_NV_fragment_program2 GL_NV_fragment_shader_interlock GL_NV_framebuffer_mixed_samples GL_NV_framebuffer_multisample_coverage GL_NV_geometry_shader4 GL_NV_geometry_shader_passthrough GL_NV_gpu_program4 GL_NV_internalformat_sample_query GL_NV_gpu_program4_1 GL_NV_gpu_program5 GL_NV_gpu_program5_mem_extended GL_NV_gpu_program_fp64 GL_NV_gpu_program_multiview GL_NV_gpu_shader5 GL_NV_half_float GL_NV_light_max_exponent GL_NV_memory_a
 ttachment GL_NV_multisample_coverage GL_NV_multisample_filter_hint GL_NV_occlusion_query GL_NV_packed_depth_stencil GL_NV_parameter_buffer_object GL_NV_parameter_buffer_object2 GL_NV_path_rendering GL_NV_path_rendering_shared_edge GL_NV_pixel_data_range GL_NV_point_sprite GL_NV_primitive_restart GL_NV_query_resource GL_NV_query_resource_tag GL_NV_register_combiners GL_NV_register_combiners2 GL_NV_sample_locations GL_NV_sample_mask_override_coverage GL_NV_shader_atomic_counters GL_NV_shader_atomic_float GL_NV_shader_atomic_fp16_vector GL_NV_shader_atomic_int64 GL_NV_shader_buffer_load GL_NV_shader_storage_buffer_object GL_NV_shader_subgroup_partitioned GL_NV_texgen_reflection GL_NV_texture_barrier GL_NV_texture_compression_vtc GL_NV_texture_env_combine4 GL_NV_texture_multisample GL_NV_texture_rectangle GL_NV_texture_rectangle_compressed GL_NV_texture_shader GL_NV_texture_shader2 GL_NV_texture_shader3 GL_NV_transform_feedback GL_NV_transform_feedback2 GL_NV_uniform_buffer_unified_memory GL_NV_uniform_buffer_st
 d430_layout GL_NV_vdpau_interop GL_NV_vdpau_interop2 GL_NV_vertex_array_range GL_NV_vertex_array_range2 GL_NV_vertex_attrib_integer_64bit GL_NV_vertex_buffer_unified_memory GL_NV_vertex_program GL_NV_vertex_program1_1 GL_NV_vertex_program2 GL_NV_vertex_program2_option GL_NV_vertex_program3 GL_NV_viewport_array2 GL_NV_viewport_swizzle GL_NVX_conditional_render GL_NV_gpu_multicast GL_NVX_progress_fence GL_NVX_gpu_memory_info GL_NVX_nvenc_interop GL_NV_shader_thread_group GL_NV_shader_thread_shuffle GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent GL_OVR_multiview GL_OVR_multiview2 GL_SGIS_generate_mipmap GL_SGIS_texture_lod GL_SGIX_depth_texture GL_SGIX_shadow GL_SUN_slice_accum
-OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle 1988638072
+OPENGL LOG: Creating OpenGL 4.5 graphics device ; Context level  <OpenGL 4.5> ; Context handle -1928833112
 Initialize mono
 Mono path[0] = '/home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/Managed'
 Mono path[1] = '/home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-linux'
 Mono config path = '/home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56945
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56208
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: /home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -130,20 +130,20 @@ Register platform support module: /home/kahlis/Unity/Hub/Editor/6000.0.20f1/Edit
 Register platform support module: /home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: /home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: /home/kahlis/Unity/Hub/Editor/6000.0.20f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0,002445 seconds.
-- Loaded All Assemblies, in  0,319 seconds
+Registered in 0,002430 seconds.
+- Loaded All Assemblies, in  0,315 seconds
 Native extension for LinuxStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 223 ms
+Android Extension - Scanning For ADB Devices 214 ms
 Native extension for WindowsStandalone target not found
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0,686 seconds
-Domain Reload Profiling: 1006ms
-	BeginReloadAssembly (64ms)
+- Finished resetting the current domain, in  0,651 seconds
+Domain Reload Profiling: 966ms
+	BeginReloadAssembly (63ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
@@ -152,25 +152,25 @@ Domain Reload Profiling: 1006ms
 	RebuildCommonClasses (38ms)
 	RebuildNativeTypeToScriptingClass (9ms)
 	initialDomainReloadingComplete (48ms)
-	LoadAllAssembliesAndSetupDomain (160ms)
-		LoadAssemblies (64ms)
+	LoadAllAssembliesAndSetupDomain (157ms)
+		LoadAssemblies (63ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (157ms)
-			TypeCache.Refresh (155ms)
-				TypeCache.ScanAssembly (143ms)
+		AnalyzeDomain (154ms)
+			TypeCache.Refresh (153ms)
+				TypeCache.ScanAssembly (141ms)
 			BuildScriptInfoCaches (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (687ms)
+	FinalizeReload (652ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (646ms)
+		SetupLoadedEditorAssemblies (613ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (395ms)
+			InitializePlatformSupportModulesInManaged (381ms)
 			SetLoadedEditorAssemblies (4ms)
 			BeforeProcessingInitializeOnLoad (6ms)
-			ProcessInitializeOnLoadAttributes (155ms)
-			ProcessInitializeOnLoadMethodAttributes (80ms)
-			AfterProcessingInitializeOnLoad (7ms)
+			ProcessInitializeOnLoadAttributes (144ms)
+			ProcessInitializeOnLoadMethodAttributes (76ms)
+			AfterProcessingInitializeOnLoad (2ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (0ms)
@@ -178,62 +178,73 @@ Domain Reload Profiling: 1006ms
 Worker process is ready to serve import requests
 Import Worker Mode flag is 0x00
 Begin MonoManager ReloadAssembly
-Caught fatal signal - signo:11 code:128 errno:0 addr:(nil)
-Obtained 57 stack frames.
-#0  0x007f36ef36bd00 in (Unknown)
-#1  0x007f36803b2297 in mono_image_get_table_rows
-#2  0x0055d16b204b28 in AttributeScanner::AttributeScanner(ScriptingClassPtr, AttributeScannerQuery const&, MemLabelId)
-#3  0x0055d16b2ca988 in SerializableManagedRef::AssertKlassMeetsRequirements()
-#4  0x0055d16b19bc4f in ManagedMonoBehaviourRef::SetScriptCache(std::shared_ptr<MonoScriptCache>&)
-#5  0x0055d16b2cc0a0 in SerializableManagedRef::SetupScriptingCache(Object*, ScriptingClassPtr, MonoScript*)
-#6  0x0055d16b2cc545 in SerializableManagedRef::RebuildMonoInstance(Object*, ScriptingClassPtr, ScriptingObjectPtr, MonoScript*)
-#7  0x0055d16b2e5009 in PersistentManager::ProduceObject(SerializedFile&, SerializedObjectIdentifier, int, ObjectCreationMode, PersistentManager::LockFlags)
-#8  0x0055d16b2e4ba8 in PersistentManager::CreateThreadActivationQueueEntry(SerializedFile&, SerializedObjectIdentifier, int, bool, PersistentManager::LockFlags)
-#9  0x0055d16b2e53c7 in PersistentManager::ReadAndActivateObjectThreaded(int, SerializedObjectIdentifier const&, SerializedFile*, bool, bool, PersistentManager::LockFlags)
-#10 0x0055d16b2e4779 in PersistentManager::ReadObjectThreaded(int, PersistentManager::LockFlags)
-#11 0x0055d16b2e20cc in PersistentManager::ReadObject(int, AwakeFromLoadMode)
-#12 0x0055d16a680ff1 in PPtr<MonoBehaviour>::operator MonoBehaviour*() const
-#13 0x0055d16a80ca66 in EditorUserBuildSettings_CUSTOM_GetActiveBuildProfile()
-#14 0x00000041c13f56 in (wrapper managed-to-native) UnityEditor.EditorUserBuildSettings:GetActiveBuildProfile_Injected ()
-#15 0x00000041c13d6b in UnityEditor.EditorUserBuildSettings:GetActiveBuildProfile ()
-#16 0x00000041c13d03 in UnityEditor.EditorUserBuildSettings:get_activeBuildProfile ()
-#17 0x00000041c13b83 in UnityEditor.Build.BuildDefines:GetBuildProfileScriptDefines ()
-#18 0x00000041c13c7e in (wrapper runtime-invoke) <Module>:runtime_invoke_object (object,intptr,intptr,intptr)
-#19 0x007f3680246406 in (Unknown)
-#20 0x007f36803e3c6d in (Unknown)
-#21 0x007f36803e3bd1 in mono_runtime_invoke
-#22 0x0055d16b22c173 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
-#23 0x0055d16b2023e3 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
-#24 0x0055d16b2024c6 in ScriptingArrayPtr ScriptingInvocation::Invoke<ScriptingArrayPtr>(ScriptingExceptionPtr*, bool)
-#25 0x0055d16b37788a in Scripting::UnityEditor::Build::BuildDefinesProxy::GetBuildProfileScriptDefines(ScriptingExceptionPtr*)
-#26 0x0055d16c1c5ef8 in invokeEditorBuildProfileScriptCompilationDefines(BuildTargetPlatform, int, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
-#27 0x0055d16c1c585c in GetScriptCompilationDefines(EditorScriptCompilationOptions, BuildTargetPlatform, int, CompatibilityLevel, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
-#28 0x0055d16c1c5e8e in GetScriptCompilationDefines(EditorScriptCompilationOptions, BuildTargetPlatform, int, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
-#29 0x0055d16beac6fa in EditorUserBuildSettings::GetActiveScriptCompilationDefinesFromCompilationOptions(EditorScriptCompilationOptions, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
-#30 0x0055d16c5739ea in IsPluginCompatible(core::basic_string<char, core::StringStorageDefault<char> >&, BuildTargetPlatform, EditorScriptCompilationOptions, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, IgnoredAssemblies&, PluginImporter*)
-#31 0x0055d16c572f44 in IsAssemblyCompatible(TargetAssemblyInfo const&, core::basic_string<char, core::StringStorageDefault<char> >&, BuildTargetPlatform, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, EditorScriptCompilationOptions, IgnoredAssemblies&)
-#32 0x0055d16c57476a in FilterIncompatibleAndDuplicateAssemblies(core::vector<TargetAssemblyInfo, core::allocator<TargetAssemblyInfo, 0ul> > const&, BuildTargetPlatform, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, EditorScriptCompilationOptions, IgnoredAssemblies&)
-#33 0x0055d16c575303 in CompatibleTargetAssemblies(EditorScriptCompilationOptions, core::vector<TargetAssemblyInfo, core::allocator<TargetAssemblyInfo, 0ul> > const&)
-#34 0x0055d16c585ad4 in UpdateTargetAssembliesInMonoManager()
-#35 0x0055d16a6775aa in CallbackArray::Invoke()
-#36 0x0055d16b1cfffc in ProfilerCallbackInvoke<CallbackArray, &GlobalCallbacks::initialDomainReloadingComplete>::Invoke(char const*)
-#37 0x0055d16b1cf19d in MonoManager::ReloadAssembly(AssemblyLoadReason)
-#38 0x0055d16c58932b in LoadDomainAndUserAssemblies(AssemblyLoadReason)
-#39 0x0055d16c9386e0 in AssetImportWorkerClient::ReloadScriptingDomain()
-#40 0x0055d16c954a4f in core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(InitializeMessage const&)::$_11>(AssetImportWorkerClient::HandleMessage(InitializeMessage const&)::$_11&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
-#41 0x0055d16ca48a7d in asio::detail::completion_handler<core::mutable_function<void ()>, asio::io_context::basic_executor_type<std::allocator<void>, 0u> >::do_complete(void*, asio::detail::scheduler_operation*, std::error_code const&, unsigned long)
-#42 0x0055d16ca2b8c7 in asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::error_code const&)
-#43 0x0055d16ca2b3c1 in asio::detail::scheduler::run(std::error_code&)
-#44 0x0055d16ca2faf3 in IOService::Run(bool)
-#45 0x0055d16c92bcd0 in RunAssetImporterV2()
-#46 0x0055d16c01dc27 in Application::InitializeProject()
-#47 0x0055d16c7310e3 in InitializeUnity(void*)
-#48 0x007f36f27460d9 in (Unknown)
-#49 0x007f36f273fe8c in (Unknown)
-#50 0x007f36f27a1c98 in (Unknown)
-#51 0x007f36f2745f37 in g_main_loop_run
-#52 0x007f36ef7efb35 in gtk_main
-#53 0x0055d16c7306d2 in main
-#54 0x007f36ef355088 in __libc_start_call_main
-#55 0x007f36ef35514b in __libc_start_main
-#56 0x0055d16a5f8029 in (Unknown)
+mono_os_mutex_lock: pthread_mutex_lock failed with "Argumento inválido" (22)
+Caught fatal signal - signo:6 code:-6 errno:0 addr:0x3e8000081b8
+Obtained 67 stack frames.
+#0  0x007f7b6796bd00 in (Unknown)
+#1  0x007f7b679c4664 in __pthread_kill_implementation
+#2  0x007f7b6796bc4e in gsignal
+#3  0x007f7b67953902 in abort
+#4  0x007f7aec45f125 in monoeg_assert_abort
+#5  0x007f7aec44881e in (Unknown)
+#6  0x007f7aec45f43d in (Unknown)
+#7  0x007f7aec45f4c0 in monoeg_g_log
+#8  0x007f7aec3b20b9 in (Unknown)
+#9  0x007f7aec3b24fb in (Unknown)
+#10 0x007f7aec426c46 in (Unknown)
+#11 0x007f7aec426cb8 in mono_custom_attrs_from_class
+#12 0x0055b564a2e6b6 in AttributeScanner::Next()
+#13 0x0055b564af3990 in SerializableManagedRef::AssertKlassMeetsRequirements()
+#14 0x0055b5649c4c4f in ManagedMonoBehaviourRef::SetScriptCache(std::shared_ptr<MonoScriptCache>&)
+#15 0x0055b564af50a0 in SerializableManagedRef::SetupScriptingCache(Object*, ScriptingClassPtr, MonoScript*)
+#16 0x0055b564af5545 in SerializableManagedRef::RebuildMonoInstance(Object*, ScriptingClassPtr, ScriptingObjectPtr, MonoScript*)
+#17 0x0055b564b0e009 in PersistentManager::ProduceObject(SerializedFile&, SerializedObjectIdentifier, int, ObjectCreationMode, PersistentManager::LockFlags)
+#18 0x0055b564b0dba8 in PersistentManager::CreateThreadActivationQueueEntry(SerializedFile&, SerializedObjectIdentifier, int, bool, PersistentManager::LockFlags)
+#19 0x0055b564b0e3c7 in PersistentManager::ReadAndActivateObjectThreaded(int, SerializedObjectIdentifier const&, SerializedFile*, bool, bool, PersistentManager::LockFlags)
+#20 0x0055b564b0d779 in PersistentManager::ReadObjectThreaded(int, PersistentManager::LockFlags)
+#21 0x0055b564b0b0cc in PersistentManager::ReadObject(int, AwakeFromLoadMode)
+#22 0x0055b563ea9ff1 in PPtr<MonoBehaviour>::operator MonoBehaviour*() const
+#23 0x0055b564035a66 in EditorUserBuildSettings_CUSTOM_GetActiveBuildProfile()
+#24 0x0000004055ff56 in (wrapper managed-to-native) UnityEditor.EditorUserBuildSettings:GetActiveBuildProfile_Injected ()
+#25 0x0000004055fd6b in UnityEditor.EditorUserBuildSettings:GetActiveBuildProfile ()
+#26 0x0000004055fd03 in UnityEditor.EditorUserBuildSettings:get_activeBuildProfile ()
+#27 0x0000004055fb83 in UnityEditor.Build.BuildDefines:GetBuildProfileScriptDefines ()
+#28 0x0000004055fc7e in (wrapper runtime-invoke) <Module>:runtime_invoke_object (object,intptr,intptr,intptr)
+#29 0x007f7aec246406 in (Unknown)
+#30 0x007f7aec3e3c6d in (Unknown)
+#31 0x007f7aec3e3bd1 in mono_runtime_invoke
+#32 0x0055b564a55173 in scripting_method_invoke(ScriptingMethodPtr, ScriptingObjectPtr, ScriptingArguments&, ScriptingExceptionPtr*, bool)
+#33 0x0055b564a2b3e3 in ScriptingInvocation::Invoke(ScriptingExceptionPtr*, bool)
+#34 0x0055b564a2b4c6 in ScriptingArrayPtr ScriptingInvocation::Invoke<ScriptingArrayPtr>(ScriptingExceptionPtr*, bool)
+#35 0x0055b564ba088a in Scripting::UnityEditor::Build::BuildDefinesProxy::GetBuildProfileScriptDefines(ScriptingExceptionPtr*)
+#36 0x0055b5659eeef8 in invokeEditorBuildProfileScriptCompilationDefines(BuildTargetPlatform, int, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
+#37 0x0055b5659ee85c in GetScriptCompilationDefines(EditorScriptCompilationOptions, BuildTargetPlatform, int, CompatibilityLevel, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
+#38 0x0055b5659eee8e in GetScriptCompilationDefines(EditorScriptCompilationOptions, BuildTargetPlatform, int, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
+#39 0x0055b5656d56fa in EditorUserBuildSettings::GetActiveScriptCompilationDefinesFromCompilationOptions(EditorScriptCompilationOptions, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> >&)
+#40 0x0055b565d9c9ea in IsPluginCompatible(core::basic_string<char, core::StringStorageDefault<char> >&, BuildTargetPlatform, EditorScriptCompilationOptions, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, IgnoredAssemblies&, PluginImporter*)
+#41 0x0055b565d9bf44 in IsAssemblyCompatible(TargetAssemblyInfo const&, core::basic_string<char, core::StringStorageDefault<char> >&, BuildTargetPlatform, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, EditorScriptCompilationOptions, IgnoredAssemblies&)
+#42 0x0055b565d9d76a in FilterIncompatibleAndDuplicateAssemblies(core::vector<TargetAssemblyInfo, core::allocator<TargetAssemblyInfo, 0ul> > const&, BuildTargetPlatform, core::vector<core::basic_string<char, core::StringStorageDefault<char> >, core::allocator<core::basic_string<char, core::StringStorageDefault<char> >, 0ul> > const&, EditorScriptCompilationOptions, IgnoredAssemblies&)
+#43 0x0055b565d9e303 in CompatibleTargetAssemblies(EditorScriptCompilationOptions, core::vector<TargetAssemblyInfo, core::allocator<TargetAssemblyInfo, 0ul> > const&)
+#44 0x0055b565daead4 in UpdateTargetAssembliesInMonoManager()
+#45 0x0055b563ea05aa in CallbackArray::Invoke()
+#46 0x0055b5649f8ffc in ProfilerCallbackInvoke<CallbackArray, &GlobalCallbacks::initialDomainReloadingComplete>::Invoke(char const*)
+#47 0x0055b5649f819d in MonoManager::ReloadAssembly(AssemblyLoadReason)
+#48 0x0055b565db232b in LoadDomainAndUserAssemblies(AssemblyLoadReason)
+#49 0x0055b5661616e0 in AssetImportWorkerClient::ReloadScriptingDomain()
+#50 0x0055b56617da4f in core::mutable_function<void ()>::DispatchT<IOService::PostHelper<AssetImportWorkerClient::HandleMessage(InitializeMessage const&)::$_11>(AssetImportWorkerClient::HandleMessage(InitializeMessage const&)::$_11&&, IOService::WrapCallableInFunctionTag)::{lambda()#1}>::Dispatch()
+#51 0x0055b566271a7d in asio::detail::completion_handler<core::mutable_function<void ()>, asio::io_context::basic_executor_type<std::allocator<void>, 0u> >::do_complete(void*, asio::detail::scheduler_operation*, std::error_code const&, unsigned long)
+#52 0x0055b5662548c7 in asio::detail::scheduler::do_run_one(asio::detail::conditionally_enabled_mutex::scoped_lock&, asio::detail::scheduler_thread_info&, std::error_code const&)
+#53 0x0055b5662543c1 in asio::detail::scheduler::run(std::error_code&)
+#54 0x0055b566258af3 in IOService::Run(bool)
+#55 0x0055b566154cd0 in RunAssetImporterV2()
+#56 0x0055b565846c27 in Application::InitializeProject()
+#57 0x0055b565f5a0e3 in InitializeUnity(void*)
+#58 0x007f7b6ad460d9 in (Unknown)
+#59 0x007f7b6ad3fe8c in (Unknown)
+#60 0x007f7b6ada1c98 in (Unknown)
+#61 0x007f7b6ad45f37 in g_main_loop_run
+#62 0x007f7b67defb35 in gtk_main
+#63 0x0055b565f596d2 in main
+#64 0x007f7b67955088 in __libc_start_call_main
+#65 0x007f7b6795514b in __libc_start_main
+#66 0x0055b563e21029 in (Unknown)
