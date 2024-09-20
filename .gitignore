@@ -34,3 +34,7 @@ sysinfo.txt
 # Builds
 *.apk
 *.unitypackage
+
+# Auto generated folders from IDEs
+.vscode/
+.idea/
